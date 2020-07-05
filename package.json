@@ -1,11 +1,16 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "a blog application made with ejs modules",
+=======
+  "description": "",
+>>>>>>> vanleer
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "author": "Magdalena Ben Bassat Luszczynska",
   "license": "ISC",
   "dependencies": {
@@ -26,4 +31,14 @@
     "url": "https://github.com/mag-d-alen/EJS-blog/issues"
   },
   "homepage": "https://github.com/mag-d-alen/EJS-blog#readme"
+=======
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11"
+  }
+>>>>>>> vanleer
 }
