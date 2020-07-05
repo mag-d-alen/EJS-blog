@@ -20,11 +20,11 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/about", (req, res)=>{
-  res.render("about", {aboutContent: homeStartingContent});
+  res.render("about", {aboutContent: aboutContent});
 })
 
 app.get("/contact", (req, res)=>{
-  res.render("contact", {contactContent: homeStartingContent});
+  res.render("contact", {contactContent: contactContent});
 })
 
 
