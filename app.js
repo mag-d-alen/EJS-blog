@@ -15,20 +15,35 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
+
+const posts =[];
+
+
 app.get("/", (req, res)=>{
-  res.render("home", {homeStartingContent: homeStartingContent});
-})
+  res.render("home", {homeStartingContent: homeStartingContent})
+  console.log(posts);
+});
 
 app.get("/about", (req, res)=>{
-  res.render("about", {aboutContent: aboutContent});
-})
+  res.render("about", {aboutContent: aboutContent})
+});
 
 app.get("/contact", (req, res)=>{
-  res.render("contact", {contactContent: contactContent});
+  res.render("contact", {contactContent: contactContent})
+  });
+
+app.get("/compose", (req, res)=>{
+    res.render("compose")
+    });
+
+
+app.post("/compose", (req, res)=>{
+const post={ title :req.body.newPostTitle,
+              body: req.body.newPost
+        }
+posts.push(post);
+res.redirect("/");
 })
-
-
-
 
 
 
